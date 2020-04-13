@@ -4,7 +4,6 @@ ourRequest.onload =function(){
     var ourData = JSON.parse(ourRequest.responseText);
     renderHTML(ourData);
 }
-ourRequest.send();
 
 
 
