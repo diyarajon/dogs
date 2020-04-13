@@ -5,3 +5,9 @@ ourRequest.onload =function(){
     renderHTML(ourData);
 }
 ourRequest.send();
+
+
+
+function renderHTML(data){
+    var htmlString = "this is a test"
+}
