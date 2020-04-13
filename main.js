@@ -9,5 +9,5 @@ ourRequest.send();
 
 
 function renderHTML(data){
-    var htmlString = "this is a test"
+    var htmlString = "<p>this is a test</p>";
 }
