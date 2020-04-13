@@ -1,5 +1,5 @@
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://diyarajon.github.io/cats/');
+ourRequest.open('GET', 'view-source:https://learnwebcode.github.io/json-example/animals-1.json');
 ourRequest.onload =function(){
     var ourData = JSON.parse(ourRequest.responseText);
     renderHTML(ourData);
