@@ -10,6 +10,7 @@
     <h1>HELLO THIS IS JAVASCRIPT OOFEE</h1>
     <p id="p1"></p>
     <p id="p2"></p>
+    <p id="p3"></p>
 
     <script>
         var restaurant = {name:"Asia Cafe", 
@@ -25,6 +26,16 @@
     for(i = shops.length ; i > 0; i--){
         document.getElementById("p2").innerHTML += 
         shops[i];
+    }
+
+    var cafe = ["rr", 'asia', 'yoyoyyo'];
+    var txt = "";
+    cafe.forEach(myFunction);
+    document.getElementById("p3").innerHTML = txt;
+
+    function myFunction(value)
+    {
+        text += value + " <br>";
     }
     </script>
 
