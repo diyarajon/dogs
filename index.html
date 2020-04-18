@@ -11,9 +11,12 @@
     <p id="p1"></p>
 
     <script>
-        var restaurant = ["Asia Cafe", "Round Rock Donuts", "CiCi's pizza"];
+        var restaurant = {name:"Asia Cafe", 
+                        takeOut: "yes",
+                        delivery: "no"};
     document.getElementById("p1").innerHTML =
-    "Hellllllllloooooooo " + restaurant[1]; 
+    restaurant.name + " has take out : " +restaurant.takeOut + "<br>"
+    + "has delivery: " + restaurant.delivery; 
     </script>
 
 </body>
