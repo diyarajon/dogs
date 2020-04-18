@@ -1,12 +1,26 @@
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'view-source:https://learnwebcode.github.io/json-example/animals-1.json');
-ourRequest.onload =function(){
-    var ourData = JSON.parse(ourRequest.responseText);
-    renderHTML(ourData);
-}
 
+        var restaurant = {name:"Asia Cafe", 
+                        takeOut: "yes",
+                        delivery: "no"};
 
+    document.getElementById("p1").innerHTML =
+    restaurant.name  + "<br>"+ " has take out : " +restaurant.takeOut + "<br>"
+    + "has delivery: " + restaurant.delivery; 
 
-function renderHTML(data){
-    var htmlString = "<p>this is a test</p>";
-}
+    var shops = ["rr donuts", "asia cafe", 'criquet clothing' ];
+
+    for(i = shops.length ; i > 0; i--){
+        document.getElementById("p2").innerHTML += 
+        shops[i];
+    }
+
+    var cafe = ["rr", 'asia', 'yoyoyyo'];
+    var txt = "";
+    cafe.forEach(myFunction);
+    document.getElementById("p3").innerHTML = txt;
+    document.getElementById("p3").color = "red";
+    function myFunction(value)
+    {
+        txt += value + " <br>";
+    }
