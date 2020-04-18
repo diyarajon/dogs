@@ -9,14 +9,23 @@
 
     <h1>HELLO THIS IS JAVASCRIPT OOFEE</h1>
     <p id="p1"></p>
+    <p id="p2"></p>
 
     <script>
         var restaurant = {name:"Asia Cafe", 
                         takeOut: "yes",
                         delivery: "no"};
+
     document.getElementById("p1").innerHTML =
     restaurant.name  + "<br>"+ " has take out : " +restaurant.takeOut + "<br>"
     + "has delivery: " + restaurant.delivery; 
+
+    var shops = ["rr donuts", "asia cafe", 'criquet clothing' ];
+
+    for(i = 0 ; i < shops.length; i--){
+        document.getElementById("p2").innerHTML += 
+        shops[i];
+    }
     </script>
 
 </body>
