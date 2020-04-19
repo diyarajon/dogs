@@ -1,5 +1,11 @@
 var ourRequest = new XMLHttpRequest();
+fetch("./side.json")
+.then(function(resp){
+return resp.json();
+}) 
+.then(function(data){
 
+});
         var restaurant = {name:"Asia Cafe", 
                         takeOut: "yes",
                         delivery: "no"};
@@ -24,3 +30,6 @@ var ourRequest = new XMLHttpRequest();
     {
         txt += value + " <br>";
     }
+
+    document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
