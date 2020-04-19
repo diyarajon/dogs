@@ -1,11 +1,7 @@
 var ourRequest = new XMLHttpRequest();
-fetch("./side.json")
-.then(function(resp){
-return resp.json();
-}) 
-.then(function(data){
 
-});
+var myData = JSON.parse(side);
+
         var restaurant = {name:"Asia Cafe", 
                         takeOut: "yes",
                         delivery: "no"};
