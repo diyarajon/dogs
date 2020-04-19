@@ -29,9 +29,12 @@
     //document.getElementById("demo").innerHTML =
 //obj.employees[1].firstName + " " + obj.employees[1].lastName;
 
-var employees;
-
-employees = loadJSON("side.json");
-
- document.getElementById("demo").innerHTML =
-obj.employees[1].firstName + " " + obj.employees[1].lastName;
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myObj.name;
+  }
+};
+xmlhttp.open("GET", "side.json", true);
+xmlhttp.send();
