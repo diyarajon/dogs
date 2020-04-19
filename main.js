@@ -1,6 +1,5 @@
 var ourRequest = new XMLHttpRequest();
 
-var myData = JSON.parse(side);
 
         var restaurant = {name:"Asia Cafe", 
                         takeOut: "yes",
