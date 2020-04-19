@@ -34,10 +34,10 @@ xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
     document.getElementById("demo").innerHTML = myObj.name;
-    var txt="";
-    myObj.pets.forEach(myFunction);
-    document.getElementById("demo").innerHTML = txt;
+    
   }
 };
+document.getElementById("demo").innerHTML = myObj.name;
+
 xmlhttp.open("GET", "side.json", true);
 xmlhttp.send();
