@@ -39,7 +39,7 @@ xmlhttp.onreadystatechange = function() {
     document.getElementById("demo").innerHTML +=" " + myObj.age;
     document.getElementById("demo").innerHTML +=" " + myObj.pets[i].animal;
     var para = document.createElement("P");
-    para.innerText = "This is a paragraph";
+    para.innerText = myObj.pets[i].animal;
     document.body.appendChild(para);
       }
     
