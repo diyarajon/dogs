@@ -36,10 +36,9 @@ xmlhttp.onreadystatechange = function() {
     for(var i = 0; i < myObj.pets.length;i++)
     {
       document.getElementById("demo").innerHTML = myObj.name;
-    document.getElementById("demo").innerHTML +=" " + myObj.age;
     document.getElementById("demo").innerHTML +=" " + myObj.pets[i].animal;
     var para = document.createElement("P");
-    para.innerText = myObj.pets[i].animal;
+    para.innerText = myObj.pets[i].name + myObj.pets[i].animal;
     document.body.appendChild(para);
       }
     
