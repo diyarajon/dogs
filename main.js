@@ -35,7 +35,7 @@ xmlhttp.onreadystatechange = function() {
     var myObj = JSON.parse(this.responseText);
     document.getElementById("demo").innerHTML = myObj.name;
     document.getElementById("demo").innerHTML +=" " + myObj.age;
-    document.getElementById("demo").innerHTML +=" " + myObj.pets[1];
+    document.getElementById("demo").innerHTML +=" " + myObj.pets.animal;
   }
 };
 
