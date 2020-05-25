@@ -1,6 +1,5 @@
 {
-    "name":"John",
-    "age":31,
+    "name":"Asia Cafe",
     "pets":[
         { "animal":"dog", "name":"Fido" },
         { "animal":"cat", "name":"Felix" },
