@@ -33,9 +33,13 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.name;
+    for(var i = 0; i < myObj.pets.length;i++)
+    {
+      document.getElementById("demo").innerHTML = myObj.name;
     document.getElementById("demo").innerHTML +=" " + myObj.age;
-    document.getElementById("demo").innerHTML +=" " + myObj.pets[1].animal;
+    document.getElementById("demo").innerHTML +=" " + myObj.pets[i].animal;
+    }
+    
   }
 };
 
