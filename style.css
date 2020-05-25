@@ -1,4 +1,9 @@
 #demo{
     text-align: center;
-    color: chartreuse;
+    color: goldenrod;
+}
+
+p{
+    text-align: center;
+    color: coral;
 }
