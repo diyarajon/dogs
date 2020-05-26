@@ -37,8 +37,11 @@ xmlhttp.onreadystatechange = function() {
     {
       document.getElementById("demo").innerHTML = myObj.restaurant[i].name;
     document.getElementById("demo").innerHTML +=" " + myObj.restaurant[i].dineIn;
+    var restaurantTitle = document.createElement("h1");
+    restaurantTitle.innerText = myObj.restaurant[i].name;
+    document.body.appendChild(restaurantTitle);
     var para = document.createElement("P");
-    para.innerText = myObj.restaurant[i].takeOut + " " + myObj.restaurant[i].giftCard;
+    para.innerText = `takeout:${myObj.restaurant[i].takeout} giftCard:${myObj.restaurant[i].giftCard}`;
     document.body.appendChild(para);
       }
     
