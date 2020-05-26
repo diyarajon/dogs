@@ -33,10 +33,10 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    for(var i = 0; i < restaurant.length;i++)
+    for(var i = 0; i < myObj.restaurant.length;i++)
     {
-      document.getElementById("demo").innerHTML = restaurant[i].name;
-    document.getElementById("demo").innerHTML +=" " + restaurant[i].dineIn;
+      document.getElementById("demo").innerHTML = myObj.restaurant[i].name;
+    document.getElementById("demo").innerHTML +=" " + myObj.restaurant[i].dineIn;
     //var para = document.createElement("P");
     //para.innerText = restaurant[i].takeOut + " " + restaurant[i].giftCard;
     //document.body.appendChild(para);
