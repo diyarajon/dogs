@@ -40,6 +40,7 @@ xmlhttp.onreadystatechange = function() {
     var restaurantTitle = document.createElement("h1");
     restaurantTitle.innerText = myObj.restaurant[i].name;
     document.body.appendChild(restaurantTitle);
+    restaurantTitle.href = "something.com";
     var para = document.createElement("P");
     para.innerText = `takeout:${myObj.restaurant[i].takeout} giftCard:${myObj.restaurant[i].giftCard}`;
     document.body.appendChild(para);
