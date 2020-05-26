@@ -37,9 +37,9 @@ xmlhttp.onreadystatechange = function() {
     {
       document.getElementById("demo").innerHTML = myObj.restaurant[i].name;
     document.getElementById("demo").innerHTML +=" " + myObj.restaurant[i].dineIn;
-    //var para = document.createElement("P");
-    //para.innerText = restaurant[i].takeOut + " " + restaurant[i].giftCard;
-    //document.body.appendChild(para);
+    var para = document.createElement("P");
+    para.innerText = myObj.restaurant[i].takeOut + " " + myObj.restaurant[i].giftCard;
+    document.body.appendChild(para);
       }
     
   }
