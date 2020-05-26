@@ -1,5 +1,5 @@
 {
-    "restaurants":[
+    "restaurant":[
         { "name":"Asia Cafe", "link":"http://www.asiacafetx.com/", "dineIn":"no", "takeout":"yes", "giftCard":"yes" },
         { "name":"Contigo", "link":"https://contigotexas.com/", "dineIn":"no", "takeout":"no", "giftCard":"yes" },
         { "name":"Ski Shores Cafe", "link":"https://skishoresaustin.com/", "dineIn":"no", "takeout":"yes", "giftCard":"no" }
